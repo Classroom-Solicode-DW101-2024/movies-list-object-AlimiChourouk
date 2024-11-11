@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>Movies</title>
+</head>
+<body>
+    <h1>Movies</h1>
+   
+    <input type="text" class="button-Recherche-Retourner" id="recherche-titre" style="display: none;" placeholder="entre le titre">
+    <button type="button" class="button-Recherche-Retourner" id="rechercher" style="display: none;" onclick="rechercherfilme()">Rechercher</button>
+    <button type="button" class="button-Recherche-Retourner" id="retourner" style="display: none;" onclick="afficherTablehtml()">Retourner</button>
+   
+    <table id="mouvie">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </table>
+    <form id="mouvie-addMovies">
+       <button type="button" id="Movies" onclick="afficherTablehtml()">films</button>
+       <button type="button" id="add-Movies" onclick="addMovies()">Ajouter des films</button>
+    </form>
+    <form id="creeMovie" style="display: none;">
+         <label for="text">titre</label>
+         <input type="text" id="title" name="titre" required> <br>
+         <label for="text">Support</label>
+         <input type="text" id="support" name="support" required> <br>
+         <label for="text">Date</label>
+         <input type="date" id="Date" name="date" required> <br>
+         <label for="text">Rating</label>
+         <input type="number" id="rating" name="rating" required> <br>
+         <button type="button" onclick="affcherAddMouvie()">Ajouter</button>
+         
+    </form>
+    <script src="scripte.js"></script>
+</body>
+</html>
